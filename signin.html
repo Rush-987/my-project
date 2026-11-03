@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050a12"><title>Sign in · LabBuddy</title>
+  <link rel="icon" href="favicon.svg"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-page">
+  <div class="noise" aria-hidden="true"></div><div class="grid-bg" aria-hidden="true"></div><div class="orb orb-a"></div><div class="orb orb-b"></div>
+  <header class="auth-header"><a class="brand" href="index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span class="brand-text">LabBuddy<span class="brand-dot">.</span></span></a><a class="back-link" href="index.html">← Back to home</a></header>
+  <main class="auth-shell">
+    <section class="auth-card">
+      <div class="eyebrow"><span class="pulse"></span> AUTHENTICATED WORKSPACE</div>
+      <h1>Welcome <span>back.</span></h1><p class="auth-subtitle">Sign in to continue your labs, notes and progress.</p>
+      <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+      <button id="google" class="oauth-button" type="button"><span class="google-g">G</span> Continue with Google</button>
+      <div class="auth-divider"><span>OR CONTINUE WITH EMAIL</span></div>
+      <form id="signin-form">
+        <label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <div class="label-row"><label for="password">Password</label><a href="forgot-password.html">Forgot password?</a></div>
+        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Your password" required>
+        <button class="button button-primary auth-submit" type="submit">Sign in <span>→</span></button>
+      </form>
+      <p class="auth-switch">New to LabBuddy? <a href="signup.html">Create an account</a></p>
+      <p class="auth-legal">By continuing, you agree to use LabBuddy responsibly and only against systems you are authorized to test.</p>
+    </section>
+    <aside class="auth-aside"><div class="aside-mark">LB<span>_</span></div><p class="eyebrow">YOUR CYBER LAB COMMAND CENTER</p><h2>Less noise.<br><span>More signal.</span></h2><p>Your workspace for practical security learning, repeatable playbooks and measurable progress.</p><div class="aside-status"><i></i> SECURE SESSION · TLS</div></aside>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="auth-client.js"></script><script src="signin.js"></script>
+</body></html>

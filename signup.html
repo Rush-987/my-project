@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#050a12"><title>Create account · LabBuddy</title><link rel="icon" href="favicon.svg"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="auth.css"></head>
+<body class="auth-page"><div class="noise"></div><div class="grid-bg"></div><div class="orb orb-a"></div><div class="orb orb-b"></div>
+<header class="auth-header"><a class="brand" href="index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span class="brand-text">LabBuddy<span class="brand-dot">.</span></span></a><a class="back-link" href="index.html">← Back to home</a></header>
+<main class="auth-shell"><section class="auth-card">
+<div class="eyebrow"><span class="pulse"></span> CREATE YOUR WORKSPACE</div><h1>Start your <span>mission.</span></h1><p class="auth-subtitle">Create an account to save your learning progress and lab notes.</p>
+<div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+<button id="google" class="oauth-button" type="button"><span class="google-g">G</span> Sign up with Google</button><div class="auth-divider"><span>OR USE YOUR EMAIL</span></div>
+<form id="signup-form">
+<label for="name">Display name</label><input id="name" name="name" autocomplete="name" maxlength="60" placeholder="Your name" required>
+<label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+<label for="password">Password</label><input id="password" name="password" type="password" autocomplete="new-password" minlength="10" placeholder="At least 10 characters" required>
+<label for="confirm">Confirm password</label><input id="confirm" name="confirm" type="password" autocomplete="new-password" minlength="10" placeholder="Repeat your password" required>
+<label class="check-row"><input id="terms" type="checkbox" required><span>I agree to the acceptable-use terms and will only test systems I am authorized to assess.</span></label>
+<button class="button button-primary auth-submit" type="submit">Create account <span>→</span></button>
+</form><p class="auth-switch">Already registered? <a href="signin.html">Sign in</a></p>
+<p class="auth-legal">We'll send a verification link before enabling your account.</p>
+</section><aside class="auth-aside"><div class="aside-mark">LB<span>_</span></div><p class="eyebrow">LEARN · PRACTICE · REPEAT</p><h2>Build skills<br><span>that stick.</span></h2><p>Keep your progress and notes connected to your own secure account.</p><div class="aside-status"><i></i> PRIVATE USER DATA · ROW LEVEL SECURITY</div></aside></main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="auth-client.js"></script><script src="signup.js"></script></body></html>
